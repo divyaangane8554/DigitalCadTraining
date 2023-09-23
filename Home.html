@@ -10,7 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header id="home-header">
@@ -186,15 +189,16 @@
 
     <section id="popularCourses-section"> 
         <h1 class="section-heading"> Our <span>Popular</span> Courses</h1>
-        <div class="slide-container swiper">
-            <div class="slide-content">
+        <div class="container swiper">
+            <div class="slide-container">
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide">
-                        <div class="image-content">
+                        <div class="image-box">
                             <!-- <span class="overlay"></span> -->
+                            <img src="Images\car-course-2.png" alt="course-img">
                         </div>
 
-                        <div class="card-content">
+                        <div class="profile-details">
                             <div class="rating-div">
                                 <span class="design-div">Design</span>
                                 <span class="design-rating">⭐⭐⭐⭐⭐​​</span>
@@ -217,38 +221,12 @@
                     </div>
 
                     <div class="card swiper-slide">
-                        <div class="image-content">
+                        <div class="image-box">
                             <!-- <span class="overlay"></span> -->
+                            <img src="Images\car-course-2.png" alt="course-img">
                         </div>
 
-                        <div class="card-content">
-                            <div class="rating-div">
-                                <span class="design-div">Design</span>
-                                <span class="design-rating">⭐⭐⭐⭐⭐​​</span>
-                            </div>
-                            <h2 class="course-name">Automotive Biw Product Design </h2>
-                            <div class="tutor-sessions">
-                                <div class="inner-sessions">
-                                    <div><img src="Images\tutor.png" alt=""></div>
-                                    <div class="second-inner">
-                                        <h4>Senthil</h4>
-                                        <p>Mentor</p>
-                                    </div>
-                                </div>
-                                <div class="live-sessions">
-                                    <span><img src="Images\ph_video-fill.png" alt=""></span><span>40 live sessions</span>
-                                </div>
-                            </div>
-                            <button class="button">View Details</button>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <!-- <span class="overlay"></span> -->
-                        </div>
-
-                        <div class="card-content">
+                        <div class="profile-details">
                             <div class="rating-div">
                                 <span class="design-div">Design</span>
                                 <span class="design-rating">⭐⭐⭐⭐⭐​​</span>
@@ -271,26 +249,55 @@
                     </div>
 
                     <div class="card swiper-slide">
-                        <div class="image-content">
+                        <div class="image-box">
                             <!-- <span class="overlay"></span> -->
+                            <img src="Images\car-course-2.png" alt="course-img">
                         </div>
 
-                        <div class="card-content">
+                        <div class="profile-details">
                             <div class="rating-div">
                                 <span class="design-div">Design</span>
                                 <span class="design-rating">⭐⭐⭐⭐⭐​​</span>
                             </div>
-                            <h2 class="course-name">Automotive Fixture Design </h2>
+                            <h2 class="course-name">Automotive Plastic Product Design </h2>
                             <div class="tutor-sessions">
                                 <div class="inner-sessions">
                                     <div><img src="Images\tutor.png" alt=""></div>
                                     <div class="second-inner">
-                                        <h4>Pravin</h4>
+                                        <h4>Balkrishna Dhuri</h4>
                                         <p>Mentor</p>
                                     </div>
                                 </div>
                                 <div class="live-sessions">
-                                    <span><img src="Images\ph_video-fill.png" alt=""></span><span>32 live sessions</span>
+                                    <span><img src="Images\ph_video-fill.png" alt=""></span><span>45 live sessions</span>
+                                </div>
+                            </div>
+                            <button class="button">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                            <!-- <span class="overlay"></span> -->
+                            <img src="Images\car-course-2.png" alt="course-img">
+                        </div>
+
+                        <div class="profile-details">
+                            <div class="rating-div">
+                                <span class="design-div">Design</span>
+                                <span class="design-rating">⭐⭐⭐⭐⭐​​</span>
+                            </div>
+                            <h2 class="course-name">Automotive Plastic Product Design </h2>
+                            <div class="tutor-sessions">
+                                <div class="inner-sessions">
+                                    <div><img src="Images\tutor.png" alt=""></div>
+                                    <div class="second-inner">
+                                        <h4>Balkrishna Dhuri</h4>
+                                        <p>Mentor</p>
+                                    </div>
+                                </div>
+                                <div class="live-sessions">
+                                    <span><img src="Images\ph_video-fill.png" alt=""></span><span>45 live sessions</span>
                                 </div>
                             </div>
                             <button class="button">View Details</button>
@@ -300,7 +307,7 @@
                 </div>    
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div> 
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -311,8 +318,8 @@
             
         </div>
     </section>
-    <script src="cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
 
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
