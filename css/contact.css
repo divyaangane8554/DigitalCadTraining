@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contactSection{
+    width: 60%; /* 60% width of the parent container */
+    float: left; /* Float the section to the left */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.contactSection-div{
+    padding: 50px 60px 50px 60px;
+}
+
+.contactSection-div h1{
+    color: #0C0C0F;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 133.333% */
+    letter-spacing: 2.7px;
+}
+
+.contactSection-div p{
+    color: #000;
+    font-family: Poppins;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 194.444% */
+    letter-spacing: 0.72px;
+}
+
+.contact-spans{
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contspan-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.contact-spans div{
+    display: flex;
+    gap: 10px;
+    color: #000;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.84px;
+}
+.contspan2{
+    margin-top: 0;
+}
+
+#contact-form-aside {
+    font-style: italic;
+    width: 40%; /* 40% width of the parent container */
+    float: right; /* Float the aside to the right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.contact-form-div {
+    width: 430px;
+    height: 480px;
+    margin-top: 70px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 50px 0px rgba(174, 174, 174, 0.25);
+    display: flex;
+    flex-direction: column; /* Stack label-input pairs vertically */
+    align-items: start; /* Center content horizontally */
+    padding: 50px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Style for label and input pairs */
+.contact-form-div .form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 20px; /* Add spacing between label-input pairs */
+}
+
+.contact-form-div label {
+    color: #08072D;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.96px;
+}
+
+.contact-form-div input[type="text"],
+.contact-form-div input[type="email"],
+.contact-form-div textarea {
+    width: 100%; /* Take up the full width of their container */
+    padding: 10px; /* Add padding for spacing inside inputs */
+    border: 1px solid #ccc; /* Add a border for inputs */
+    border-radius: 4px; /* Round the input corners */
+    margin-top: 5px; /* Add spacing between input and label */
+}
+
+.contact-form-div button{
+    display: flex;
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #0D92DB;
+    margin-left: auto;
+
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 500% */
+    letter-spacing: 0.96px;
+}
+
+/* question part */
+
+
+.questions-div{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.questions-div h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.collapsible {
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(174, 174, 174, 0.30);
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #fcf9f9;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 15px;
+    font-size: 15px;
+    font-style: italic;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0px 0px 30px 30px;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .content ul li{
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+
+  .content ul li:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; 
+
+}
+
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
