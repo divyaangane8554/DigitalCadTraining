@@ -1,0 +1,114 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%; 
+}
+
+.right_div {
+  background-color: antiquewhite;
+}
+
+.left_div {
+    /* Styles for the left div */
+}
+
+/* General tab and tab content styles */
+.tab {
+  display: flex;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button,
+.sessions_tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active,
+.sessions_tab button.active {
+  text-decoration: underline #0D92DB;
+  text-underline-offset: 0.8em;
+  text-decoration-thickness: 3px;
+}
+
+
+/* Style the tab content */
+.tabcontent, 
+.session_tabcontent{
+  display: block; /* Set initial display property to block */
+  padding: 6px 12px;
+  border-top: none;
+  text-align: start;
+}
+
+.tablinks, .session_tablinks {
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabcontent, .session_tabcontent {
+  display: none;
+  padding: 10px;
+}
+
+/* Specific styling for nested tabs */
+.sessions_tab {
+  display: flex;
+}
+
+/* All sessions tab content */
+
+.all_sessionslist_div{
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 0px 16px 0px rgba(169, 169, 169, 0.25);
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.all_sessionslist_div div{
+  
+}
+
+.sessiondiv_img img{
+  width: 200px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.sessiondiv_firstline {
+  display: flex;
+  align-items: center; /* or 'flex-start' or 'flex-end' depending on your layout preferences */
+  justify-content: space-between;
+}
+
+.sessiondiv_secondline{
+  display: flex;
+  align-items: center; /* or 'flex-start' or 'flex-end' depending on your layout preferences */
+  justify-content: space-between;
+}
+
+.inner-sessions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.second-inner h4 {
+  margin-bottom: 0;
+}
+
+.second-inner p {
+  margin-top: 5px;
+}

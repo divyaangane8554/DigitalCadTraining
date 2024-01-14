@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\studentDashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="grid-container">
+        <div class="right_div">
+            <h1>Plastic Product Design Course</h1>
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Sessions')" >Sessions</button>  <!-- id=defaultOpen -->
+                <button class="tablinks" onclick="openCity(event, 'Assignment')">Assignment</button>
+                <button class="tablinks" onclick="openCity(event, 'Syllabus')">Syllabus</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Sessions" class="tabcontent">
+
+                <div class="sessions_tab">
+                    <!-- <input type="radio" id="radioAllSessions" name="sessionTabs" checked>
+                    <label class="session_tablinks" for="radioAllSessions" onclick="openSessions(event, 'All_Sessions')">All Sessions</label>
+                     -->
+                    <button class="session_tablinks" onclick="openSessions(event, 'All_Sessions')">All Sessions</button>
+                    <button class="session_tablinks" onclick="openSessions(event, 'Upcoming_Sessions')">Upcoming Sessions</button>
+                    <button class="session_tablinks" onclick="openSessions(event, 'Completed_Sessions')">Complted sessions</button>
+                </div>
+
+                <div id="All_Sessions" class="session_tabcontent"><br>
+                    <h1>All Sessions</h1>
+                    <div class="all_sessionslist_div">
+                        <div class="sessiondiv_img">
+                            <img src="Images\sessionsdiv.png" alt="">
+                        </div>
+                        <div class="all_sessionslist_div_left">
+                            <h2>Plastic Product Design Session 1</h2>
+                            <div class="sessiondiv_firstline">
+                                <div>
+                                    <span>starts on</span>
+                                    <span><img src="Images\calendar_month.jpg" alt=""></span>
+                                    <span>25/12/2023</span>
+                                </div>
+                                <div>
+                                    <span><img src="Images\schedule.jpg" alt=""></span>
+                                    <span>09.00 PM</span>
+                                </div>
+                            </div>
+                            <div class="sessiondiv_secondline">
+                                <div class="inner-sessions">
+                                    <img src="Images\tutor.png" alt="">
+                                        <div class="second-inner">
+                                            <h4>Balkrishna Dhuri</h4>
+                                            <p>Mentor</p>
+                                        </div>
+                                </div>
+                                <div class="live-sessions">
+                                    <span><img src="Images\ph_video-fill.png" alt=""></span>
+                                    <span>45 live sessions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Upcoming_Sessions" class="session_tabcontent">
+                    <h1>Upcoming Sessions</h1>
+                    <div><p>Hello All</p></div>
+                </div>
+
+                <div id="Completed_Sessions" class="session_tabcontent">
+                    <p>helli</p>
+                </div>
+
+            </div>
+            
+            <div id="Assignment" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+            
+            <div id="Syllabus" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+
+
+        <div class="left_div">
+        </div>
+    </section>
+    
+    <script src="js\studentDashboard.js"></script>
+</body>
+</html>
